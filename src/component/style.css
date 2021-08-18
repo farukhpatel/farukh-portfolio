@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background-color: #0373fc;
 }
 .navbar ul li {
   display: inline;
@@ -16,4 +16,45 @@
 }
 .navbar ul li a:hover {
   color: blue;
+}
+.homeMaindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imgMain {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 12px;
+}
+.Details {
+  color: #0373fc;
+}
+
+.Details h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 25px !important;
+}
+.imgDiv {
+  margin-top: 25px;
+}
+.oneProjectDetails div {
+  margin: 37px;
+}
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 15px;
+  }
+  .navbar ul li {
+    font-size: 15px;
+    padding-left: 16px;
+  }
 }

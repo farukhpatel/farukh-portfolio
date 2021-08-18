@@ -6,7 +6,9 @@ import 'react-toastify/dist/ReactToastify.css';
 let url = Config.BASE_URL
 
 const instance = axios.create({
-
+    baseURL: url,
+    params: {},
+    data: {}
 });
 console.log('instance create', instance)
 instance.interceptors.request.use((request) => {

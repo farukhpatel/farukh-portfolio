@@ -13,14 +13,15 @@ import About from './component/About'
 import API from './utility/ApiConstant'
 import axios from 'axios'
 import instance from './utility/AxiosConstant'
+import Project from './component/Project'
 const App = () => {
-  console.log('final url', API.GET_DATA)
-  instance
-    .get(API.GET_DATA)
-    .then((res) => {
-      console.log('res from api', res)
-    })
-    .catch((err) => console.log(err))
+  // console.log('final url', API.GET_DATA)
+  // instance
+  //   .get(API.GET_DATA)
+  //   .then((res) => {
+  //     console.log('res from api', res)
+  //   })
+  //   .catch((err) => console.log(err))
   return (
     <>
       <Router>
@@ -28,6 +29,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/project" component={Project} />
         </Switch>
       </Router>
     </>
