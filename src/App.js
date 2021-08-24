@@ -1,39 +1,48 @@
-import logo from './logo.svg'
-import './App.css'
-import Navbar from './component/Navbar'
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./component/Navbar";
 import {
   Switch,
   Route,
   HashRouter,
   BrowserRouter as Router,
   withRouter,
-} from 'react-router-dom'
-import Home from './component/Home'
-import About from './component/About'
-import API from './utility/ApiConstant'
-import axios from 'axios'
-import instance from './utility/AxiosConstant'
-import Project from './component/Project'
+} from "react-router-dom";
+import Home from "./component/Home";
+import About from "./component/About";
+import API from "./utility/ApiConstant";
+import axios from "axios";
+import instance from "./utility/AxiosConstant";
+import Project from "./component/Project";
+import { createContext, useEffect, useState } from "react";
+import myContext, {
+  initialState,
+  Provider,
+  reducer,
+} from "./component/myContext";
 const App = () => {
-  // console.log('final url', API.GET_DATA)
-  // instance
-  //   .get(API.GET_DATA)
-  //   .then((res) => {
-  //     console.log('res from api', res)
-  //   })
-  //   .catch((err) => console.log(err))
+  const [notes] = useState([
+    {
+      title: "First note",
+      description: "This is my first note",
+      done: false,
+    },
+  ]);
+
   return (
     <>
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/project" component={Project} />
+          <Provider initialState={initialState} reducer={reducer}>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/project" component={Project} />
+          </Provider>
         </Switch>
       </Router>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

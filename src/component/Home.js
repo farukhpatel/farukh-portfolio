@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import farukhImg from '../assets/images/farukh.jpg'
+import myContext, { useContextValues } from './myContext'
 import './style.css'
 const Home = () => {
+  const [state, dispatch] = useContextValues()
+
+  useEffect(() => {
+    // console.log(state)
+    dispatch({
+      type: 'ADD',
+      payload: {
+        id: 'sdhfgjshgdf',
+        name: 'arun',
+      },
+    })
+  }, [])
+
   return (
     <>
       <div className="homeMaindiv">
