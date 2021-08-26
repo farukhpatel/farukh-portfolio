@@ -20,6 +20,7 @@ import myContext, {
   Provider,
   reducer,
 } from "./component/myContext";
+import FormikC from "./component/Formik";
 const App = () => {
   const [notes] = useState([
     {
@@ -38,6 +39,7 @@ const App = () => {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/project" component={Project} />
+            <Route path="/formik" component={FormikC} />
           </Provider>
         </Switch>
       </Router>

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 import {
   BrowserRouter as Router,
   Link,
   Switch,
   withRouter,
-} from 'react-router-dom'
-import './style.css'
+} from "react-router-dom";
+import "./style.css";
 const Navbar = () => {
   return (
     <>
@@ -21,10 +21,13 @@ const Navbar = () => {
           <li>
             <Link to="/project"> Projects </Link>
           </li>
+          <li>
+            <Link to="/formik"> Formik </Link>
+          </li>
         </ul>
         {/* </Router> */}
       </nav>
     </>
-  )
-}
-export default withRouter(Navbar)
+  );
+};
+export default withRouter(Navbar);

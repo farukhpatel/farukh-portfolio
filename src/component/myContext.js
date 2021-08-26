@@ -9,19 +9,22 @@ export const Provider = ({ reducer, initialState, children }) => (
 export default MyContext;
 
 export const initialState = {
-  name: "Farukh",
+  value: 1,
 };
 
 export const reducer = (state, action) => {
-  console.log(action);
-  //   switch (action.type) {
-  //     case "ADD":
-  //       return {
-  //         ...state,
-  //         userid: action.payload.id,
-  //         name: action.payload.name,
-  //       };
-  //   }
+  console.log("action", action);
+  console.log("state", state);
+  switch (action.type) {
+    case "ADD":
+      return {
+        value: state.value + 1,
+      };
+    case "DEC":
+      return {
+        value: state.value - 1,
+      };
+  }
 };
 
 export const useContextValues = () => useContext(MyContext);

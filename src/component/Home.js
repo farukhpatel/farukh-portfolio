@@ -6,19 +6,25 @@ const Home = () => {
   const [state, dispatch] = useContextValues()
 
   useEffect(() => {
-    // console.log(state)
-    dispatch({
-      type: 'ADD',
-      payload: {
-        id: 'sdhfgjshgdf',
-        name: 'arun',
-      },
-    })
+    console.log('state', state)
+    // dispatch({
+    //   type: 'ADD',
+    //   payload: {
+    //     id: 'sdhfgjshgdf',
+    //     name: 'arun',
+    //   },
+    // })
   }, [])
+  useEffect(() => {
+    console.log('state', state.value)
+  }, [state])
 
   return (
     <>
       <div className="homeMaindiv">
+        <h1>Value {state.value}</h1>
+        <button onClick={() => dispatch({ type: 'ADD' })}>Add</button>
+        <button onClick={() => dispatch({ type: 'DEC' })}>Dec</button>
         <div className="imgDiv">
           <img
             className="imgMain"
