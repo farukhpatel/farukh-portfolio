@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        highlight: '#a60a76'
       },
       fontFamily: {
         headings: ["Oswald", "sans-serif"],

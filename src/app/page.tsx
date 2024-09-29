@@ -1,11 +1,11 @@
+"use client";
 import Image from "next/image";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div className="">
-     <h1>This is h1 tag</h1>
-     <h2>This is h2 tag</h2>
-     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, ipsa doloribus minus voluptas animi et fugit corporis hic quis nihil sapiente ducimus tempore, libero dolor ipsam qui iste culpa! Ducimus repellat hic dolorum tempora. Pariatur officia alias reprehenderit accusantium porro non, minima a dolores iste temporibus aut voluptatibus natus sunt, expedita error omnis suscipit ducimus impedit repellat provident, praesentium ab assumenda? Magnam, iusto! Reprehenderit, facere. Sint quibusdam tempora ducimus reiciendis porro iste velit cumque sunt earum numquam odit eligendi, veritatis a ullam! Quas amet, delectus perspiciatis at debitis hic et quasi culpa suscipit itaque accusantium perferendis vero consectetur cumque tempora recusandae? Illum nam fugit quam beatae, consequuntur ipsa pariatur nesciunt, possimus dicta repellendus dolore necessitatibus! Hic iste debitis mollitia blanditiis non aperiam tempora at possimus tenetur quibusdam. Repellendus est excepturi ducimus commodi similique quaerat eligendi dignissimos. Excepturi debitis vitae cupiditate quibusdam adipisci fugiat. Ex voluptas earum officia eum eos explicabo, dicta quia necessitatibus nisi itaque eveniet impedit libero alias aliquam animi enim beatae ratione repudiandae culpa. Qui deleniti explicabo quos odit ab ad aperiam at neque unde consequuntur repellat nobis nemo magni ea modi necessitatibus veritatis illum sequi, et facere laborum. Non tempore hic eaque provident ex officia omnis sit ratione deleniti amet! Alias necessitatibus, quae at ut ea exercitationem eveniet hic cumque obcaecati placeat sequi molestiae autem veritatis aut sapiente qui quam deserunt libero veniam optio odit nobis. Numquam consectetur, sapiente voluptas beatae eaque ad quaerat rem tempora hic exercitationem perspiciatis voluptate optio non accusantium temporibus nostrum nemo consequatur harum, corporis omnis voluptatem. Sapiente iste sint repudiandae officiis nemo tempora asperiores modi dolorem reprehenderit officia unde, provident magni architecto temporibus? Magni similique aspernatur cumque minus culpa hic doloremque dolore ad corporis voluptatem in tempora eos atque, repellat temporibus voluptates asperiores, unde aliquid? Sapiente nobis adipisci necessitatibus quidem eveniet eum?</p>
+      <Navbar name="Farukh Patel"/>
     </div>
   );
 }
