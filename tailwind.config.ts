@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        headings: ["Oswald", "sans-serif"],
+        para: ["Fredoka", "sans-serif"],
+      },
     },
   },
   plugins: [],
