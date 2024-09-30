@@ -15,10 +15,10 @@ const Navbar: React.FC<NavbarProps> = ({ name }) => {
   };
 
   return (
-    <nav className="py-4 px-4 md:px-12 flex justify-between items-center">
+    <nav className="py-4 px-4 md:px-16 flex justify-between items-center">
       {/* Left Side: Name/Heading */}
       <div className="text-white text-xl font-bold font-headings flex gap-3 items-center">
-        <Image src={icon} alt="icon " width={32} height={32} />
+        <Image src={icon} alt="icon" width={32} height={32} />
         <div className="text-white">{name}</div>
       </div>
 

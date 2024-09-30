@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {getTotalExp} from './utills/helper';
-
-
+import { getTotalExp } from "./utills/helper";
 
 export const metadata: Metadata = {
   title: "Farukh Patel",
@@ -16,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
