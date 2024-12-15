@@ -12,5 +12,6 @@ export const navbarOptions:NavbarOptions[]=[
 export const colors={
     background: "#000000",
     foreground: "#ffffff",
-    highlight: '#a60a76'
+    highlight: '#a60a76',
+    testColor:'#FFF'
 };
