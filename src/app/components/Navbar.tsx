@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ name }) => {
           onClick={toggleDropdown}
           className="text-white focus:outline-none"
         >
-          <Menu/>
+          <Menu />
         </button>
 
         {/* Dropdown Content for Mobile */}
@@ -55,6 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ name }) => {
             {(navbarOptions || []).map((nav) => {
               return (
                 <a
+                  key={nav.name}
                   href="#"
                   className="block px-4 py-2 font-headings text-white bg-highlight"
                 >
