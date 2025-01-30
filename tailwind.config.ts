@@ -9,9 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        highlight: '#a60a76'
+        background: "#0D0D0D", // Deep dark background
+        text: "#F5F5F5", // Light greyish-white text
+        accent: "#D4AF37", // Gold for highlights
+        secondary: "#1A1A1A", // Dark grey for sections
+        highlight: "#3498DB", // Blue accent for contrast
+        muted: "#888888", // Muted grey for subtle text
       },
       fontFamily: {
         headings: ["Oswald", "sans-serif"],
