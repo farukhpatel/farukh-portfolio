@@ -10,7 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         background: "#0D0D0D", // Deep dark background
+        primary: "#EF4444",
+        primarySecondary: "#EF5350",
         text: "#F5F5F5", // Light greyish-white text
+        textSecondary: "#BDBDBD", // Light greyish-white text
         accent: "#D4AF37", // Gold for highlights
         secondary: "#1A1A1A", // Dark grey for sections
         highlight: "#3498DB", // Blue accent for contrast

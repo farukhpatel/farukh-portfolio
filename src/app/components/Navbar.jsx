@@ -46,7 +46,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-6 py-4 md:px-12 lg:px-20 flex justify-between items-center">
         {/* Logo */}
         <Link
           href="/"
@@ -58,7 +58,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
           <button
-            href="about"
+            onClick={() => scrollToSection("about")}
             className="text-text hover:text-highlight transition font-para"
           >
             About
@@ -99,7 +99,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-secondary backdrop-blur-md">
+        <div className="md:hidden bg-background backdrop-blur-md">
           <div className="flex flex-col space-y-4 p-4">
             <button
               onClick={() => scrollToSection("about")}
