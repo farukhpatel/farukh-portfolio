@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import hackerImg from "../public/images/hero.webp"; // Replace with your image path
+import ReactTypingEffect from "react-typing-effect";
 
 export default function Hero() {
   return (
@@ -11,18 +12,34 @@ export default function Hero() {
     >
       <div className="container mx-auto px-6 pt-24 md:pt-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center">
         {/* Left Section */}
-        <div className="md:w-1/2 text-center md:text-left">
-          <p className="text-lg text-textSecondary">Hey there,</p>
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-            I'm <span className="text-primary">Farukh Patel</span>
+        <div className="md:w-1/2  md:text-left">
+          <p className="text-xl text-textSecondary">Hey there,</p>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            I'm <span className="text-primary ">Farukh Patel</span>
           </h1>
-          <p className="text-primarySecondary text-xl mt-2">
-            - React Developer
+          <p className="text-primarySecondary mt-2 h-[30px]">
+            <span className="text-primarySecondary text-3xl md:text-4xl">
+              <ReactTypingEffect
+                text={[
+                  "React Developer",
+                  "Frontend Engineer",
+                  "MERN Stack Developer",
+                  "JavaScript Enthusiast",
+                ]}
+                typingDelay={200}
+                speed={30}
+                eraseSpeed={30}
+                eraseDelay={1500}
+              />
+            </span>
           </p>
-          <p className="text-textSecondary mt-4 max-w-md">
-            A dedicated React developer.From the very beginning of my journey,
-            I've a deep-seated passion for solving real-world problems through
-            innovative technology solutions.
+
+          <p className="text-textSecondary text-lg mt-4 max-w-md">
+            A passionate MERN Stack Developer dedicated to building scalable and
+            user-friendly web applications. With expertise in React, Redux, and
+            performance optimization, I strive to craft seamless digital
+            experiences and solve real-world problems through innovative
+            technology solutions.
           </p>
 
           {/* Call to Action Button */}
@@ -32,7 +49,7 @@ export default function Hero() {
         </div>
 
         {/* Right Section - Image */}
-        <div className="md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
+        <div className="md:flex md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
           <Image
             src={hackerImg}
             alt="Hacker Image"
@@ -63,26 +80,3 @@ export default function Hero() {
     </section>
   );
 }
-
-// import Link from "next/link";
-// export default function Hero() {
-//   return (
-//     <section
-//       id="about"
-//       className="min-h-screen flex items-center justify-center bg-gradient-to-r bg-background text-white"
-//     >
-//       <div className="text-center">
-//         <h1 className="text-6xl font-bold">Your Name</h1>
-//         <p className="mt-4 text-xl">
-//           Frontend Developer | Building Modern Web Experiences
-//         </p>
-//         <Link
-//           href="#projects"
-//           className="mt-8 inline-block px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition"
-//         >
-//           View My Work
-//         </Link>
-//       </div>
-//     </section>
-//   );
-// }
