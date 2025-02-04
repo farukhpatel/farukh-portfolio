@@ -153,7 +153,9 @@ export default function Navbar() {
 
           {/* Get in Touch Button - Mobile */}
           <a
-            href="mailto:farukhpatel0804@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=farukhpatel0804@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-6 bg-primary text-white px-5 py-2 rounded-lg text-base font-semibold hover:bg-primarySecondary transition duration-300 w-fit"
           >
             Get in Touch

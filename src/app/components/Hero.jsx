@@ -43,9 +43,15 @@ export default function Hero() {
           </p>
 
           {/* Call to Action Button */}
-          <button className="mt-6 bg-primarySecondary text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-red-600 transition duration-300">
-            Get in touch
-          </button>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=farukhpatel0804@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="mt-6 bg-primary text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-red-600 transition duration-300">
+              Get in Touch
+            </button>
+          </a>
         </div>
 
         {/* Right Section - Image */}
