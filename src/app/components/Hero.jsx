@@ -14,10 +14,10 @@ export default function Hero() {
         {/* Left Section */}
         <div className="md:w-1/2  md:text-left">
           <p className="text-xl text-textSecondary">Hey there,</p>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="mt-2 text-4xl md:text-5xl font-bold leading-tight">
             I'm <span className="text-primary ">Farukh Patel</span>
           </h1>
-          <p className="text-primarySecondary mt-2 h-[30px]">
+          <div className="text-primarySecondary mt-2 h-[30px]">
             <span className="text-primarySecondary text-3xl md:text-4xl">
               <ReactTypingEffect
                 text={[
@@ -32,7 +32,7 @@ export default function Hero() {
                 eraseDelay={1500}
               />
             </span>
-          </p>
+          </div>
 
           <p className="text-textSecondary text-lg mt-4 max-w-md">
             A passionate MERN Stack Developer dedicated to building scalable and
