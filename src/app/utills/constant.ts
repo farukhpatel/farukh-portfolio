@@ -9,7 +9,7 @@ export const navbarOptions: NavbarOptions[] = [
   { name: "Contact" },
 ];
 
-export const tabOptions = ["about", "projects", "skills", "contact"];
+export const tabOptions = ["about", "skills", "projects", "contact"];
 
 export const colors = {
   background: "#000000",
