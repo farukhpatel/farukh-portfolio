@@ -2,6 +2,9 @@ interface NavbarOptions {
   name: string;
 }
 
+//common padding
+// px-6 md:px-12 lg:px-20
+
 export const navbarOptions: NavbarOptions[] = [
   { name: "Home" },
   { name: "About" },

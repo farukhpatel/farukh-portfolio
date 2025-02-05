@@ -1,37 +1,70 @@
-import { FaReact, FaNodeJs, FaCss3Alt } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  SiReact,
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiCss3,
+} from "react-icons/si";
 
-export default function Skills() {
+const Skills = () => {
   const skills = [
-    { name: "React", icon: <FaReact />, level: 90 },
-    { name: "TypeScript", icon: <SiTypescript />, level: 85 },
-    { name: "Next.js", icon: <SiNextdotjs />, level: 80 },
-    { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 95 },
-    { name: "Node.js", icon: <FaNodeJs />, level: 70 },
-    { name: "CSS", icon: <FaCss3Alt />, level: 90 },
+    { icon: <SiReact />, name: "React", level: 90 },
+    { icon: <SiTypescript />, name: "TypeScript", level: 85 },
+    { icon: <SiNextdotjs />, name: "Next.js", level: 88 },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS", level: 92 },
+    { icon: <SiNodedotjs />, name: "Node.js", level: 80 },
+    { icon: <SiCss3 />, name: "CSS", level: 95 },
   ];
 
   return (
-    <section id="skills" className="py-16 bg-gray-100">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8">Skills</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {skills.map((skill) => (
-            <div key={skill.name} className="text-center">
-              <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center text-4xl text-blue-600">
+    <section className="py-16 bg-background">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-3xl md:text-4xl font-bold text-left text-primary mb-12 font-headings"
+        >
+          Skills
+          {/* Technical Expertise */}
+        </motion.h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: index * 0.1 }}
+              className="group flex items-center space-x-4 p-4 hover:bg-secondary rounded-lg transition-all duration-300"
+            >
+              <div className="text-4xl group-hover:text-primarySecondary transition-colors duration-300">
                 {skill.icon}
               </div>
-              <h3 className="text-xl font-semibold">{skill.name}</h3>
-              <div className="mt-2 h-2 bg-gray-300 rounded-full">
-                <div
-                  className="h-full bg-blue-600 rounded-full"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
+
+              <div className="flex-1">
+                <div className="flex justify-between mb-2">
+                  <span className="font-para text-text">{skill.name}</span>
+                  <span className="font-para text-textSecondary">
+                    {skill.level}%
+                  </span>
+                </div>
+                <div className="h-2 bg-gray-800 rounded-full">
+                  <div
+                    className="h-2 bg-gradient-to-r from-primarySecondary to-primary rounded-full transition-all duration-500"
+                    style={{ width: `${skill.level}%` }}
+                  />
+                </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Skills;
