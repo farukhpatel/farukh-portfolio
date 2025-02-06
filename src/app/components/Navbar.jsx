@@ -156,7 +156,7 @@ export default function Navbar() {
             href="https://mail.google.com/mail/?view=cm&fs=1&to=farukhpatel0804@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 bg-primary text-white px-5 py-2 rounded-lg text-base font-semibold hover:bg-primarySecondary transition duration-300 w-fit"
+            className="mt-6 bg-primarySecondary text-white px-5 py-2 rounded-lg text-base font-semibold hover:bg-primarySecondary transition duration-300 w-fit"
           >
             Get in Touch
           </a>
