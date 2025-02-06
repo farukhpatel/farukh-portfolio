@@ -7,16 +7,22 @@ import {
   SiTailwindcss,
   SiNodedotjs,
   SiCss3,
+  SiJavascript,
+  SiMongodb,
+  SiSass,
 } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
+    { icon: <SiJavascript />, name: "JavaScript", level: 90 },
     { icon: <SiReact />, name: "React", level: 90 },
-    { icon: <SiTypescript />, name: "TypeScript", level: 85 },
-    { icon: <SiNextdotjs />, name: "Next.js", level: 88 },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS", level: 92 },
-    { icon: <SiNodedotjs />, name: "Node.js", level: 80 },
+    { icon: <SiTypescript />, name: "TypeScript", level: 80 },
+    { icon: <SiNextdotjs />, name: "Next.js", level: 85 },
     { icon: <SiCss3 />, name: "CSS", level: 95 },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS", level: 90 },
+    { icon: <SiSass />, name: "SCSS", level: 85 },
+    { icon: <SiNodedotjs />, name: "Node.js", level: 80 },
+    { icon: <SiMongodb />, name: "MongoDB", level: 70 },
   ];
 
   return (
