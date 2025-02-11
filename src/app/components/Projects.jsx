@@ -101,7 +101,7 @@ export default function Projects() {
                 <div className=" p-6 space-y-4">
                   <motion.h3
                     whileHover={{ x: 5 }}
-                    className="flex text-2xl font-bold text-text"
+                    className="flex text-2xl font-bold text-text gap-2"
                   >
                     {project.title}
                     {project.link && (
