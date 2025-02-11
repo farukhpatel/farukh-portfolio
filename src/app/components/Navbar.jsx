@@ -88,7 +88,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-xl font-bold text-text hover:text-highlight transition font-headings"
+            className="text-xl font-bold text-text hover:text-primarySecondary transition font-headings"
           >
             Farukh Patel
           </Link>
