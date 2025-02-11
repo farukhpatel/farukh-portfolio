@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
-import { TbArrowBigRightLineFilled } from "react-icons/tb";
 
 export default function Projects() {
   const projects = [

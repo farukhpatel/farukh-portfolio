@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="md:w-1/2  md:text-left">
           <p className="text-xl text-textSecondary">Hey there,</p>
           <h1 className="mt-2 text-4xl md:text-5xl font-bold leading-tight">
-            I'm <span className="text-primary ">Farukh Patel</span>
+            I&apos;m <span className="text-primary ">Farukh Patel</span>
           </h1>
           <div className="text-primarySecondary mt-2 h-[30px]">
             <span className="text-primarySecondary text-3xl md:text-4xl">

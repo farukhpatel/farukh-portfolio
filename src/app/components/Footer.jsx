@@ -76,7 +76,7 @@ export default function Footer() {
             variants={itemVariants}
             className="text-4xl text-left font-bold text-primary mb-12 font-headings"
           >
-            Let's Connect
+            Let&apos;s Connect
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-16 items-center">
