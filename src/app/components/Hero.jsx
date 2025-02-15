@@ -3,6 +3,7 @@
 import Image from "next/image";
 import hackerImg from "../public/images/hero.webp"; // Replace with your image path
 import ReactTypingEffect from "react-typing-effect";
+import { mailToHref } from "../utills/constant";
 
 export default function Hero() {
   return (
@@ -43,11 +44,7 @@ export default function Hero() {
           </p>
 
           {/* Call to Action Button */}
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=farukhpatel0804@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={mailToHref} target="_blank" rel="noopener noreferrer">
             <button className="mt-6 bg-primarySecondary text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-red-600 transition duration-300">
               Get in Touch
             </button>

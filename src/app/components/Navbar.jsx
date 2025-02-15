@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { tabOptions } from "../utills/constant";
+import { mailToHref, tabOptions } from "../utills/constant";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -153,7 +153,7 @@ export default function Navbar() {
 
           {/* Get in Touch Button - Mobile */}
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=farukhpatel0804@gmail.com"
+            href={mailToHref}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 bg-primarySecondary text-white px-5 py-2 rounded-lg text-base font-semibold hover:bg-primarySecondary transition duration-300 w-fit"

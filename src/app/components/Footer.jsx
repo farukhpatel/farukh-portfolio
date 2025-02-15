@@ -3,6 +3,7 @@ import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbSend } from "react-icons/tb";
 import { useRef } from "react";
+import { mailToHref } from "../utills/constant";
 
 export default function Footer() {
   const socialLinks = [
@@ -53,8 +54,7 @@ export default function Footer() {
     );
 
     // Open mail client with pre-filled details
-    let url = `https://mail.google.com/mail/?view=cm&fs=1&to=farukhpatel0804@gmail.com?subject=${subject}&body=${body}`;
-
+    const url = `${mailToHref}?subject=${subject}&body=${body}`;
     window.open(url, "_blank");
   };
 
@@ -141,7 +141,7 @@ export default function Footer() {
                 <FiMail className="text-4xl text-text transition-colors duration-300 group-hover:text-primarySecondary" />
                 <p className="text-text font-para text-lg transition-colors duration-300 group-hover:text-primarySecondary">
                   <a
-                    href="mailto:farukhpatel0804@gmail.com"
+                    href={mailToHref}
                     className="group-hover:text-primarySecondary"
                   >
                     farukhpatel0804@gmail.com

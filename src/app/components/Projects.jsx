@@ -28,14 +28,12 @@ export default function Projects() {
         "Material UI",
         "Ruby on Rails",
       ],
-      link: "https://volunteercheck.in",
     },
     {
       title: "Side (Finance & Calendar Modules)",
       description:
         "Developed finance and calendar modules with PDF export and drag-and-drop scheduling.",
       tech: ["React.js", "Redux", "Context API", "Bootstrap", "Python"],
-      link: "https://side-dev.ptw.com/",
     },
     {
       title: "Bandhify (Dairy Admin Panel)",

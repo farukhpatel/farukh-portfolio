@@ -20,3 +20,5 @@ export const colors = {
   highlight: "#a60a76",
   testColor: "#FFF",
 };
+
+export const mailToHref = "mailto:farukhpatel0804@gmail.com";
