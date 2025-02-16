@@ -26,7 +26,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
+    <section id="skills" className="py-16 bg-background">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

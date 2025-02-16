@@ -68,7 +68,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="py-16 bg-background">
+    <section id="projects" className="py-16 bg-background">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.h2
           initial={{ opacity: 0 }}
